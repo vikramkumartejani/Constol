@@ -7,6 +7,16 @@
     color: #fff;
 }
 
+:root {
+    --oceanblue: #007BFF;
+    --sandybeige: #F3EFE0;
+    --sunriseorange: #FFA400;
+    --clearskyblue: #87CEEB;
+    --seafoamgreen: #A3D7A7;
+    --goldensand: #FFD700;
+    --white: #ffffff;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -42,74 +52,102 @@ img {
     width: 100%;
     margin: auto;
 }
+
+/* Mobile */
+.menu {
+    display: none;
+}
+
+.menu.active {
+    display: block;
+}
+
+.mobile-navbar-container {
+    background-color: red;
+}
+
+
 /* navbar */
-.header-one{
-    margin-bottom: 5rem;
+.header-one {
+    padding: 0 15px;
     z-index: 10000;
     position: fixed;
     width: 100%;
-    background-color: black;
+    background-color: #021738;
 }
+
 /* Top Navbar */
-.header-top{
+.header-top {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.top-navbar{
+
+.top-navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.top-navbar .info ul{
+
+.top-navbar .info ul {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.top-navbar .info ul li{
+
+.top-navbar .info ul li {
     padding: 9px;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     gap: .5rem;
 }
-.top-navbar .info ul li img{
+
+.top-navbar .info ul li img {
     height: 18px;
     width: 20px;
 }
-.top-navbar .info ul li span{
+
+.top-navbar .info ul li span {
     font-size: 16px;
 }
-.social-links-navbar ul{
+
+.social-links-navbar ul {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.social-links-navbar ul li a{
+
+.social-links-navbar ul li a {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     padding: 9px;
 }
+
 /* Bottom Navbar */
-.header-bottom{
+.header-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.main-navbar{
+
+.main-navbar {
     z-index: 1001;
-    padding: 15px 0;
     display: flex;
+    padding: 15px 0;
     align-items: center;
     justify-content: space-between;
 }
-.main-navbar img{
+
+.main-navbar img {
     width: 150px;
 }
-.main-navbar .main-menu{
+
+.responsive-navbar-mobile .main-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
 }
-.main-navbar .main-menu a{
+
+.responsive-navbar-mobile .main-menu a {
     background-color: #FF3147;
     line-height: 40px;
     padding: 0 1rem;
@@ -119,6 +157,23 @@ img {
     font-weight: 700;
     cursor: pointer;
 }
+
+.mobile-nav {
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+    padding: 10px;
+}
+.menu-btn button{
+    background: none;
+    border: none;
+}
+.menu-btn button i{
+    font-size: 1.4rem;
+}
+
+
+
 
 
 /* Challenge Container */
@@ -549,6 +604,7 @@ img {
     position: relative;
     padding: 80px 0;
 }
+
 .quick-online-container::after {
     position: absolute;
     content: '';
@@ -558,6 +614,7 @@ img {
     right: 0;
     background-color: #FF3147;
 }
+
 .form-container {
     z-index: 1;
     flex-wrap: wrap;
@@ -566,20 +623,23 @@ img {
     background-color: #fff;
     position: relative;
 }
+
 .form-container h2 {
     color: #021738;
     margin-bottom: 25px;
     font-size: 35px;
     font-weight: 700;
 }
-.form-container form .inputs{
+
+.form-container form .inputs {
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 1rem;
     margin-bottom: .8rem;
 }
-.inputs input{
+
+.inputs input {
     width: 50%;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -589,16 +649,19 @@ img {
     line-height: 1.5;
     padding: 10px;
 }
-.drop-down{
+
+.drop-down {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
-.custom-select{
+
+.custom-select {
     width: 50%;
     background-color: #F2F6F9;
     position: relative;
 }
+
 .custom-select select {
     color: #555555;
     font-size: 16px;
@@ -614,9 +677,11 @@ img {
     word-wrap: normal;
     text-transform: none;
 }
-.custom-select select option{
+
+.custom-select select option {
     color: #555555;
 }
+
 .custom-select::after {
     content: '';
     position: absolute;
@@ -629,7 +694,8 @@ img {
     border-width: 6px 6px 0 6px;
     border-color: #021738 transparent transparent transparent;
 }
-.form-container form textarea{
+
+.form-container form textarea {
     margin-top: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: #F2F6F9;
@@ -639,11 +705,13 @@ img {
     color: #555555;
     padding: 10px;
 }
-.form-container form textarea::placeholder{
-   color: #555555;
-   font-size: 1.1rem;
+
+.form-container form textarea::placeholder {
+    color: #555555;
+    font-size: 1.1rem;
 }
-.form-container form button{
+
+.form-container form button {
     margin-top: 1rem;
     background-color: #ff3147;
     border: none;
@@ -656,7 +724,8 @@ img {
     font-size: 16px;
     overflow: hidden;
 }
-.form-container form button:hover{
+
+.form-container form button:hover {
     background-color: #021738;
 }
 
@@ -1074,6 +1143,11 @@ img {
         flex: 0 0 auto;
         width: 50%;
     }
+
+    .mobile-nav {
+        display: none;
+    }
+
 }
 
 @media (min-width: 1400px) {
@@ -1085,10 +1159,14 @@ img {
 
 /* Max Width */
 @media (max-width: 1200px) {
-    .header-one{
+    .header-top {
+        display: none;
+    }
+    .responsive-navbar-mobile .main-menu{
         display: none;
     }
 }
+
 @media (max-width: 1050px) {
     .top-footer-content {
         gap: 2rem;
@@ -1181,34 +1259,41 @@ img {
     .success-boxes {
         grid-template-columns: 1fr;
     }
+
     .form-container h2 {
         font-size: 28px;
     }
+
     .quick-online-container {
         padding: 40px 0;
     }
-    
-    
+
+
 }
 
 @media (max-width: 600px) {
-    .form-container form .inputs{
+    .form-container form .inputs {
         flex-direction: column;
         width: 100%;
     }
-    .form-container{
+
+    .form-container {
         padding: 20px;
     }
-    .inputs input{
+
+    .inputs input {
         width: 100%;
     }
-    .drop-down{
+
+    .drop-down {
         flex-direction: column;
     }
-    .custom-select{
+
+    .custom-select {
         width: 100%;
     }
 }
+
 @media (max-width: 500px) {
     .bottom-image {
         flex-direction: column;

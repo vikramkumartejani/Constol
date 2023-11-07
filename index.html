@@ -51,14 +51,39 @@
                 <div class="container">
                     <div class="main-navbar">
                         <img src="images/logo.png" alt="logo">
-                        <div class="main-menu">
-                            <ul>
-                                <li>Home</li>
-                            </ul>
-                            <a href="#">Make Appointment</a>
+                        <div class="responsive-navbar-mobile">
+                            <div class="main-menu">
+                                <ul>
+                                    <li>Home</li>
+                                </ul>
+                                <a href="#">Make Appointment</a>
+                            </div>
+                            <div class="mobile-nav">
+                                <div class="menu-btn">
+                                    <button>
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </div>
+                                <div class="menu-btn">
+                                    <button>
+                                        <i class="fa fa-info-circle"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- Mobile Nav -->
+        <div class="mobile-navbar-container">
+            <div class="container">
+                <button class="toggle-button" onclick="toggleMenu()">Toggle Menu</button>
+                <nav class="menu">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </nav>
             </div>
         </div>
         <!-- Challenge Container -->
@@ -91,7 +116,7 @@
                             <p>We provide broad menu employment services for a companies.</p>
                         </div>
                     </div>
-                    <p>Challenges are just opportunities in disguise. <a href="#">Take the Challenge</a></p>
+                    <p>Challenges are just opportunities in disguise. <a href="">Take the Challenge</a></p>
                 </div>
             </div>
         </div>
@@ -563,6 +588,9 @@
             </div>
         </footer>
     </div>
+
+    <script src="app.js"></script>
+
 </body>
 
 </html>
